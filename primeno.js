@@ -1,0 +1,34 @@
+//find prime number
+
+let num=parseInt(prompt('enter a num(prime no)'))
+function isPrime()
+{
+    if(num===2)
+    {
+        return true;
+    }
+    else if(num>1)
+    {
+        for(var i=2; i<num;i++)
+        {
+           if(num%i  !==0)
+           {
+            return true;
+           }
+           else if(num===i*i)
+           {
+             return false;
+           }
+           else
+           {
+               return false;
+           }
+    
+        }
+    } 
+    else
+    {
+        return false;
+    }
+}
+console.log(isPrime())
